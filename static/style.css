@@ -1,0 +1,330 @@
+/* 
+ ########################### CSS UI-CONTENT ###############################
+*/
+
+.mad-window {
+    position: relative;
+}
+
+.ui-window-content {
+    float: left;
+    width: 611px;
+    height: 536px;
+    background-color: #fff;
+    border-radius: 0 0 6px 0;
+}
+
+.ui-window-content-general {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Info parada */
+.ui-station {
+    width: 100%;
+    height: 38px;
+    background-color: #fff;
+    border: solid 1px #ccd3d5;
+    border-radius:0px;
+}
+
+.ui-window-content-title  {
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.ui-window-content-title span {
+    font-size: medium;
+    font-family: 'Lato';
+    color: #545f65;
+    display: inline-block;
+}
+
+.ui-window-content-title .loc-icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.ui-window-content-title .loc-icon i {
+    background-image: url('@static/assets/loc@2px.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+/* Info llegadas realtime */
+
+.ui-realtimepanel {
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #ccd3d5;
+    border-radius:0px;
+}
+
+.ui-window-content-realtime  {
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.ui-window-content-realtime span {
+    font-size: medium;
+    font-family: 'Lato';
+    color: #0b9e46;
+    display: inline-block;
+}
+
+.ui-window-content-realtime .rt-icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.ui-window-content-realtime .rt-icon i {
+    background-image: url('@static/assets/realtime@2px.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+/* Info llegadas realtime */
+
+.ui-scheduledpanel {
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #ccd3d5;
+    border-radius:0px;
+}
+
+.ui-window-content-scheduled  {
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.ui-window-content-scheduled span {
+    font-size: medium;
+    font-family: 'Lato';
+    color: #F06334;
+    display: inline-block;
+}
+
+.ui-window-content-scheduled .sc-icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.ui-window-content-scheduled .sc-icon i {
+    background-image: url('@static/assets/sc@2px.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+ /* BUS */
+
+.ui-arrive{
+  margin:5px;
+  padding: 5px;
+/*  border-bottom: solid 1px #ccd3d5;*/
+  color: #252A2F;
+}
+
+.ui-arrive .ui-buspanel {
+    width: 50px;
+    background-color: #fff;
+    font-size: medium;
+    font-family: 'Lato';
+    display: inline-block;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+
+.ui-arrive .ui-buspanel .emt{
+    border: solid 1px #1E91C8;
+    border-radius:0px;
+    color:#1E91C8;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ui-buspanel .emt-icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.ui-buspanel .emt-icon i {
+    background-image: url('@static/assets/bus-emt@2px.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+.ui-buspanel .int-icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.ui-buspanel .int-icon i {
+    background-image: url('@static/assets/bus-int@2px.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+
+.ui-arrive .ui-buspanel .int{
+    border: solid 1px #0b9e46;
+    border-radius:0px;
+    color:#0b9e46;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ui-arrive .ui-buspanel .noactive{
+    border: solid 1px #535F6A;
+    border-radius:0px;
+    color:#535F6A;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* 
+ ########################### CSS BOTONES CABECERA ###############################
+*/
+
+/*Margen de los botones*/
+.ui-header-buttons{
+  margin-top: 4px;
+}
+
+/*Hover de los botones, azul mas claro*/
+.ui-header-buttons .ui-minimize:hover, .ui-header-buttons 
+.ui-maximize:hover, .ui-header-buttons .ui-close:hover {
+    -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.05);
+    border: solid 1px #c2cacd;
+    background-color: #1E91C8;
+}
+
+/*Active de los botones*/
+.ui-header-buttons .ui-minimize:active, .ui-header-buttons .ui-maximize:active,
+.ui-header-buttons .ui-close:active {
+    border: solid 1px #c2cacd;
+    background-image: -webkit-linear-gradient(top, #45A9D9, #4BACDB);
+    background-image: -moz-linear-gradient(top, #45A9D9, #4BACDB);
+    background-image: -o-linear-gradient(top, #45A9D9, #4BACDB);
+    background-image: -ms-linear-gradient(top, #45A9D9, #4BACDB);
+    background-image: linear-gradient(to bottom, #45A9D9, #4BACDB);
+    box-shadow: none;
+}
+
+/*Boton de cerrar*/
+.ui-close i {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: url('@static/assets/sprite-icons-white.png');
+    background-position: 10px 0;
+    background-size: 40px 10px;
+}
+
+/*Boton de minimizar*/
+.ui-minimize i {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: url('@static/assets/sprite-icons-white.png');
+}
+
+/* 
+ ########################### CSS HEADER ###############################
+*/
+
+/*Logo del header*/
+.ui-header .madpubtrans-logo {
+    width: 71px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+/*Logo del header i*/
+.ui-header .madpubtrans-logo i{
+    width: 80px;
+    height: 30px;
+    background-image: url('@static/logomadrid1.png');
+    background-size: 80px 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+/*Color Azul del Header*/
+.ui-header{
+  height: 50px;
+  background-image: none;
+  background-color: #0079B7;
+}
+
+/* 
+ ########################### CSS NAVBAR ###############################
+*/
+
+.ui-navbar{
+    float: left;
+    width: 252px;
+    height: 100%;
+    border-right: 1px solid #ccd3d5;
+}
+
+.ui-input-search {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 240px;
+    height: 38px;
+    background-color: #fff;
+    border: solid 1px #ccd3d5;
+    border-radius:0px;
+}
+
+.ui-input-search.active {
+    border: 1px solid #0079B7;
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.ui-input-search.active .search-icon {
+    border-right: 1px solid #0079B7;
+}
+
+.ui-input-search .search-icon i {
+    background-image: url('@static/assets/sprite-white.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 99px 16px;
+}
